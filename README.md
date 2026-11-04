@@ -1,43 +1,43 @@
-# Welcome To The Blue Marlins Performance App
+# Welcome to the Swimming Performance App
 
-# Overview
-This app is build for swimmers of the Blue Marlins. In this app the swimmers can add their swimming performances.This app helps the swimmers know what they did previously to make them better and improve their swimming performance.
+## Overview
+This app is built for swimmers. In the app, swimmers can log their swimming performances. It helps them see what they did before, so they can keep improving their swimming performance.
 
+## Installation
+1. Open your terminal in the code editor of your choice and clone the repo:
+   ```bash
+   git clone https://github.com/Sayyid15/prg08-opdracht1.git
+   ```
+2. Navigate to the server directory:
+   ```bash
+   cd server
+   ```
+3. Install all dependencies:
+   ```bash
+   npm install
+   ```
 
+## Environment
+To make the app work, you need environment variables for the OpenAI API and the OpenWeather API.
+Add them to your `.env` file using this structure:
 
-# Installation
-- Open your terminal in the code editor of your choice and clone the repo by using:
-  git clone https://github.com/Sayyid15/prg08-opdracht1.git
+```env
+OPENAI_API_TYPE=...
+OPENAI_API_VERSION=...
+OPENAI_API_BASE=...
+AZURE_OPENAI_API_KEY=...
+DEPLOYMENT_NAME=...
+ENGINE_NAME=...
+INSTANCE_NAME=...
+OPENWEATHER_API_KEY=...
+```
 
-- Navigate to the server directory using the command:
-cd server
+## Usage
+1. Start the server from the `server` directory:
+   ```bash
+   npm start
+   ```
+2. Open your browser and go to http://localhost:3000/ to check that the server is running.
+3. To open the app, go to `index.html` in your files and double-click it.
 
-- Install all the dependencies using the command:
-npm install
-
-# Environment
-To make the app work as it should you'll need the environment variables from OpenAI API and OPENWEATHER_API.
-You have to add the variables in your .env file using this structure:
-- OPENAI_API_TYPE= ...
-- OPENAI_API_VERSION= ...
-- OPENAI_API_BASE= ...
-- AZURE_OPENAI_API_KEY= ...
-- DEPLOYMENT_NAME= ...
-- ENGINE_NAME= ...
-- INSTANCE_NAME= ...
-- OPENWEATHER_API_KEY= ...
-
-
-# Usage
-
-Start the app in your server directory by using:
-npm start
-
-Open your browser and navigate to http://localhost:3000/
-This text will be displayed their:
-
-To open the app:
-Navigate to your index.html in your files and open it by double clicking the index.html. Once you've opened it you can make use of the app
-
-Have Fun writing your swimming performances
-
+Have fun logging your swimming performances!
